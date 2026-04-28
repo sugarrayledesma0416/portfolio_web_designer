@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Analytics UX Icon">
+  <rect x="10" y="10" width="108" height="108" rx="16" fill="#0f172a"/>
+  <path d="M26 94 V70" stroke="#38bdf8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M50 94 V54" stroke="#22c55e" stroke-width="10" stroke-linecap="round"/>
+  <path d="M74 94 V40" stroke="#f59e0b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M98 94 V60" stroke="#a78bfa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M24 34 C44 24, 62 30, 82 20" fill="none" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+</svg>
