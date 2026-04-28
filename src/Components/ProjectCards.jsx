@@ -10,7 +10,6 @@
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 import { projects } from "../Constants/constants";
-import { githubIcon } from "../assets";
 
 export const staggerContainer = (staggerChildren, delayChildren) => {
   return {
@@ -106,7 +105,6 @@ const ProjectCard = ({
   name,
   description,
   image,
-  source_code_link,
   demo_link,
 }) => {
   return (
@@ -151,8 +149,9 @@ const ProjectCard = ({
             className="shadow-md shadow-primary p-2 bg-tertiary rounded-lg flex justify-center"
             href={demo_link}
             target="_blank"
+            rel="noopener noreferrer"
           >
-            See the Demo
+            View Live Site
           </a>
         </div>
       </motion.div>

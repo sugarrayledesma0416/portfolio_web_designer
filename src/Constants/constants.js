@@ -41,17 +41,19 @@ import {
   neoIcon,
   figmaIcon,
   avatar,
+  webPerformanceIcon,
+  designWorkflowIcon,
+  analyticsUxIcon,
+  cmsStructuringIcon,
+  seoFoundationsIcon,
   portfolio1,
+  portfolio2,
   portfolio3,
   portfolio4,
   portfolio5,
   portfolio6,
   portfolio7,
   portfolio8,
-  portfolio9,
-  portfolio10,
-  portfolio11,
-  portfolio12,
 } from "../assets";
 
 library.add(faX, faBars, faWindowRestore, faBagShopping, faDiceD6);
@@ -93,9 +95,9 @@ const introduction = {
   text: [
     "Hello there, I'm so happy you are here! (:",
 
-    "Hello, I'm Sugar Ray, a Senior Full Stack Engineer with over 7 years of experience building scalable, high-performance applications across SaaS and enterprise environments. I specialize in backend development using Python (Django, Django REST Framework) and Node.js, along with modern frontend technologies like React, Next.js, and TypeScript.",
-    "I have strong experience designing distributed systems and microservices, optimizing database performance, and building secure, production-grade APIs using REST and GraphQL. I consistently focus on improving scalability, reducing latency, and maintaining high availability in demanding environments.",
-    "I work extensively with AWS, Docker, Kubernetes, and CI/CD pipelines to deliver reliable systems. I enjoy solving complex problems, writing clean and maintainable code, and collaborating with teams to build solutions that create real business impact.",
+    "Hello, I'm Sugar Ray, a Web Designer with 7+ years of experience crafting conversion-focused websites, landing pages, and user interfaces for global clients. I blend color theory, typography, composition, and UX strategy to create pages that are visually strong and easy to navigate.",
+    "My workflow combines Figma, Adobe Photoshop, Illustrator, and Canva with frontend knowledge in HTML, CSS, and JavaScript, so design ideas stay realistic and implementation-ready. I also use SEO-friendly structure, responsive layout systems, and CMS-oriented content planning to improve discoverability and performance.",
+    "I focus on audience-first design: clear sectioning, intuitive user flow, and message clarity for different user groups. I use user behavior insights and page analytics to iterate layouts and strengthen engagement, retention, and conversion outcomes.",
     "You can download my resume here.",
   ],
 };
@@ -121,67 +123,60 @@ export const navLinks = [
 
 const projects = [
   {
-    name: "Hulk Cars",
+    name: "Warm Up America Website Revamp",
     description:
-      "Developed a Web3-based platform that enables tokenization of real-world vehicles as NFTs, allowing users to invest in and rent high-value assets like luxury cars. The system integrates blockchain-based ownership with a modern web interface, providing a seamless user experience for browsing, purchasing, and managing tokenized assets. Built with a scalable architecture to support secure transactions, asset tracking, and high-performance user interactions.",
+      "Led a redesign focused on Warm Up America's core actions (Donate, Make, Share), improving navigation clarity for volunteers and donors. Refined content hierarchy, typography, and contrast to make sections easier to scan and understand. Delivered responsive Figma flows and implementation-ready HTML/CSS handoff notes.",
     image: portfolio1,
-    demo_link: "https://hulkcars.com/",
+    demo_link: "https://www.warmupamerica.org/",
   },
-  // {
-  //   name: "Sigma Beauty",
-  //   description:
-  //     "This project implements Connect Four in Python and Pygame, featuring a GUI and gameplay modes for player vs. AI and AI vs. AI. The AI uses the MiniMax algorithm, with optional alpha-beta pruning for improved performance.",
-  //   image: portfolio2,
-  //   demo_link: "https://sigmabeauty.com/",
-  // },
   {
-    name: "Scribble Together",
+    name: "charity: water Donation Journey",
     description:
-      "Built a real-time collaborative whiteboard application enabling users to draw, write, and share ideas simultaneously across multiple devices. Implemented live synchronization using WebSockets, interactive canvas features, and scalable backend services with Node.js/Django and Redis. Developed a responsive UI with React to deliver seamless collaboration. The platform is designed for efficient remote teamwork, diagramming, and problem-solving.",
+      "Redesigned the donation journey to make contribution steps clearer from landing to completion. Improved hero messaging, trust sections, and giving options with stronger CTA hierarchy and conversion-focused layout decisions. Applied mobile-first spacing and content structure to reduce friction in the donation flow.",
+    image: portfolio2,
+    demo_link: "https://www.charitywater.org/",
+  },
+  {
+    name: "Ravelry Community Discovery UX",
+    description:
+      "Improved community discovery UX with clearer entry points for sign-up, exploration, and first-time user onboarding. Organized content flow to help fiber artists find relevant spaces and resources faster. Applied accessibility-aware typography and contrast to keep dense content easy to scan.",
     image: portfolio3,
-    demo_link: "https://scribbletogether.com/",
+    demo_link: "https://www.ravelry.com/",
   },
   {
-    name: "Habit Tracker App",
+    name: "LoveCrafts Learning & Category IA",
     description:
-      "Developed a gamified habit tracking application with task and reward systems to improve user engagement and productivity. Built REST APIs using Django/Node.js for managing habits, progress, and user data, and developed a dynamic frontend with React for real-time updates. Integrated PostgreSQL for structured data storage and deployed on AWS using Docker. The platform helps users build consistent habits through interactive and engaging experiences.",
+      "Refined information architecture to improve discoverability of tutorials, beginner guides, and product categories. Reworked category structure and promotional hierarchy to guide users more naturally through learning and shopping paths. Designed modular content blocks and heading patterns that support SEO and CMS publishing workflows.",
     image: portfolio4,
-    demo_link: "https://habitica.com/",
+    demo_link: "https://www.lovecrafts.com/",
   },
   {
-    name: "Booking System",
+    name: "Habitat Volunteer Conversion Flow",
     description:
-      "Developed a booking and scheduling system with calendar-based availability and appointment management. Built REST APIs using Django/Node.js for handling bookings, user schedules, and notifications, and created a responsive frontend with React. Integrated PostgreSQL for managing time slots and optimized scheduling logic. The platform streamlines appointment management for service-based businesses.",
+      "Optimized volunteer conversion flow by improving local chapter discovery and clarifying paths between donation and volunteer intent. Increased action visibility on key pages through cleaner hierarchy and stronger CTA placement. Introduced mobile-first form patterns while preserving a mission-driven visual style.",
     image: portfolio5,
-    demo_link: "https://easyappointments.org/",
+    demo_link: "https://www.habitat.org/",
   },
   {
-    name: "Issue Tracker",
+    name: "Knit for Peace Campaign Storytelling",
     description:
-      "Built an issue tracking system with task management and workflow automation for development teams. Designed scalable APIs using Django/Node.js for issue creation, status tracking, and collaboration, and developed a modern Kanban-based UI using React. Implemented role-based access control and optimized database performance. The platform improves team productivity and project visibility.",
+      "Strengthened campaign storytelling around impact, sponsorship, and donation actions with a clearer narrative page flow. Improved readability of content-heavy sections using better spacing, hierarchy, and visual rhythm. Optimized imagery and responsive behavior to keep performance and clarity consistent across devices.",
     image: portfolio6,
-    demo_link: "https://plane.so/",
+    demo_link: "https://www.knitforpeace.org.uk/",
   },
   {
-    name: "Kryptomon",
+    name: "Wool and the Gang Checkout UX",
     description:
-      "Developed a Web3-based NFT platform for creating and managing unique digital creatures with dynamic attributes and traits. Built scalable backend services for asset management and ownership tracking, and developed an interactive frontend using React for a seamless user experience. Integrated blockchain technology for secure NFT minting and transactions. The platform is designed to enable users to collect, trade, and interact with digital assets in a gamified ecosystem.",
+      "Redesigned the ecommerce purchase flow from product selection to checkout to reduce decision friction and improve completion intent. Strengthened CTA consistency, product emphasis, and trust cues across key steps. Refined spacing and typographic rhythm for a smoother cross-device checkout experience.",
     image: portfolio7,
-    demo_link: "https://www.kryptomon.co/",
+    demo_link: "https://www.woolandthegang.com/",
   },
   {
-    name: "Casino Game Alphapuesta",
+    name: "Mozilla Accessibility & Content Clarity",
     description:
-      "Developed a full-stack online casino platform with interactive slot and roulette games, user authentication, and reward systems. Built scalable backend services using Node.js/Django and developed a dynamic frontend with React. The platform is designed to deliver engaging gaming experiences with real-time interactions and secure transactions.",
+      "Enhanced accessibility and content clarity for multi-topic pages by improving heading structure, focus states, and contrast strategy. Refined visual hierarchy to support faster page scanning without losing brand character. Improved information flow on priority sections to reduce drop-off and strengthen message comprehension.",
     image: portfolio8,
-    demo_link: "https://alphapuesta.net/",
-  },
-  {
-    name: "Fjällräven",
-    description:
-      "Developed a modern eCommerce platform for fashion products with product listings, filtering, and cart functionality. Built scalable APIs for product and order management using Django/Node.js, and created a responsive frontend with React. The platform provides a seamless shopping experience with optimized performance.",
-    image: portfolio11,
-    demo_link: "https://www.fjallraven.com/",
+    demo_link: "https://www.mozilla.org/en-US/",
   },
 ];
 
@@ -195,112 +190,70 @@ const skills = [
     title: "HTML",
     icon: htmlIcon,
     description:
-      "I have a strong command of HTML for organizing web pages and generating meaningful content that can be accessed by all users.",
+      "I build semantic, accessible page structures that support SEO, clean content hierarchy, and developer-friendly handoff.",
   },
   {
     id: "css",
     title: "CSS",
     icon: cssIcon,
     description:
-      "I possess expertise in utilizing CSS to design web pages and craft visually captivating layouts that enhance the overall user experience.",
+      "I design responsive, pixel-accurate layouts with strong control over spacing, typography, and visual consistency across breakpoints.",
   },
   {
     id: "javascript",
     title: "JavaScript",
     icon: jsIcon,
     description:
-      "I have substantial experience in employing JavaScript to introduce interactivity and functionality into web pages, resulting in dynamic user interfaces.",
-  },
-  {
-    id: "react",
-    title: "React",
-    icon: reactIcon,
-    description:
-      "I am well-versed in React, proficient in creating reusable components and managing application state using hooks and context.",
-  },
-  {
-    id: "java",
-    title: "Java",
-    icon: javaIcon,
-    description:
-      "I have extensive experience utilizing Java for object-oriented programming (OOP) and implementing data structures.",
-  },
-  {
-    id: "aws",
-    title: "Amazon Web Services",
-    icon: awsIcon,
-    description:
-      "I am certified in AWS and proficient in working with EC2 and RDS instances, leveraging the power of cloud computing for scalable and reliable infrastructure.",
+      "I use JavaScript for practical UI behavior such as interactive navigation, forms, lightweight animations, and conversion-focused flows.",
   },
   {
     id: "figma",
     title: "Figma",
     icon: figmaIcon,
     description:
-      "In my Figma skills, I unleash creativity, designing captivating user interfaces and collaborating seamlessly with designers and developers.",
+      "I create wireframes, high-fidelity mockups, prototypes, and reusable page patterns that speed up feedback and implementation.",
   },
   {
-    id: "git",
-    title: "Git",
-    icon: gitIcon,
+    id: "react",
+    title: "Frontend Collaboration (React-Aware)",
+    icon: reactIcon,
     description:
-      "I am proficient in Git, managing code changes, collaborating with others, and resolving conflicts effectively.",
-  },
-  {
-    id: "github",
-    title: "GitHub",
-    icon: githubIcon,
-    description:
-      "I am skilled in using GitHub for seamless project collaboration, code sharing, and issue tracking. Through GitHub, I efficiently create and manage repositories and effectively present my work to potential employers.",
-  },
-  {
-    id: "psql",
-    title: "Postgresql",
-    icon: psqlIcon,
-    description:
-      "I have a strong command of PostgreSQL, encompassing a wide range of skills such as database normalization, triggers, front-end connectivity, and data analysis using software like Power BI.",
+      "I collaborate closely with frontend developers and provide implementation-ready specs that translate smoothly into React-based interfaces.",
   },
   {
     id: "vite",
-    title: "Vite",
-    icon: viteIcon,
+    title: "Web Performance",
+    icon: webPerformanceIcon,
     description:
-      "I have gained considerable experience working with Vite for approximately six months, leveraging its capabilities to build React websites and seamlessly deploy them on platforms like Netlify.",
+      "I optimize visual assets and layout decisions for faster loading pages without sacrificing design quality.",
   },
   {
-    id: "py",
-    title: "Python",
-    icon: pyIcon,
+    id: "github",
+    title: "Design-to-Dev Workflow",
+    icon: designWorkflowIcon,
     description:
-      "With 3 years of Python experience, I am adept at coding functions and creating graphic interfaces using Tkinter.",
+      "I document design decisions clearly and collaborate asynchronously with distributed teams using structured review and iteration cycles.",
+  },
+  {
+    id: "psql",
+    title: "Analytics-Informed UX",
+    icon: analyticsUxIcon,
+    description:
+      "I use traffic and user-flow insights to refine layouts, improve navigation clarity, and support measurable conversion improvements.",
   },
   {
     id: "node",
-    title: "Node",
-    icon: nodeIcon,
+    title: "CMS & Content Structuring",
+    icon: cmsStructuringIcon,
     description:
-      "When it comes to building web applications, I prefer using Node as my runtime environment over Yarn. I have expertise in leveraging Node.js to develop powerful and scalable web applications.",
-  },
-  {
-    id: "neo",
-    title: "Neo4j",
-    icon: neoIcon,
-    description:
-      "I am knowledgeable in Neo4j, the graph database management system. I have expertise in utilizing GraphOS to build robust recommendation systems, leveraging the strength of graph-based data modeling.",
-  },
-  {
-    id: "raspi",
-    title: "Raspberry Pi",
-    icon: raspIcon,
-    description:
-      "I have hands-on experience with Raspberry Pi, where I utilized a virtual Linux machine to execute programs written in assembly language. This allowed me to explore low-level computing and develop efficient code for the Raspberry Pi platform.",
+      "I plan page sections and modular blocks for CMS editing workflows, especially for WordPress-style publishing environments.",
   },
   {
     id: "eslint",
-    title: "Eslint",
-    icon: eslintIcon,
+    title: "SEO Foundations",
+    icon: seoFoundationsIcon,
     description:
-      "I utilize ESLint to identify and resolve code issues, as well as standardize the structure of my projects. With ESLint, I ensure code quality and consistency throughout my development process.",
+      "I apply on-page SEO basics through semantic headings, readable structure, internal linking strategy, and intent-focused page content.",
   },
 ];
 
